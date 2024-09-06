@@ -1,4 +1,4 @@
-# Implematazione dell'autenticazione con jwt in un progetto .NET con frontend in Angular
+# Implematazione dell'autenticazione con jwt in un progetto .NET Core con frontend in Angular
 
 1. Il tipo di progetto migliore da cui partire per fare un backend di tipo API (senza viste Razon) è `ASP.NET Core Web API` con il check su:
 
