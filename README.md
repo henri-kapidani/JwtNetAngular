@@ -54,7 +54,7 @@
 
 1. Creare un controller `AuthController.cs` che deve contenere i metodi che gestiscono il `Login` (dove viene creato il jwt token se le credenziali di login sono corrette) e il `Register`. Il logout con la versione base del jwt si gestisce interamente da frontend e non necessita di una rotta nel backend.
 
-## Gestire il CORS
+## Gestione del CORS
 
 1. In `appsettings.json` aggiungere:
 
