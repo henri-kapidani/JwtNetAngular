@@ -15,8 +15,18 @@ Content-Type: application/json
 }
 
 ###
-GET {{ApiBaseUrl}}/api/auth/rottaProtetta
+POST {{ApiBaseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Asdf",
+  "email": "asdf@asdf.asdf",
+  "password": "asdf"
+}
+
+###
+GET {{ApiBaseUrl}}/api/sample/rottaProtetta
 Authorization: Bearer {{JwtToken}}
 
 ###
-GET {{ApiBaseUrl}}/api/auth/free
+GET {{ApiBaseUrl}}/api/sample/free

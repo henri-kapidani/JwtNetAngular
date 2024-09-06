@@ -78,18 +78,5 @@ namespace JwtNetAngular.Controllers
                 // IMPORTANTE passare l'id dell'utente appena creato al frontend + gli altri dati
             });
         }
-
-        [HttpGet("rottaProtetta")]
-        [Authorize]
-        public IActionResult rottaProtetta()
-        {
-            return Ok("Hai accesso");
-        }
-
-        [HttpGet("free")]
-        public IActionResult free()
-        {
-            return Ok("Hai sempre accesso");
-        }
     }   
 }
