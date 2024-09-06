@@ -1,0 +1,22 @@
+# ATTENZIONE: se testate le rotte che hanno l'Authorization header
+# con il protocollo http anzichè https, l'header non viene passato e quindi
+# le chiamate non funzionano
+# Possibile soluzione: usare il protocollo https (e quindi sistemare anche la porta)
+
+@ApiBaseUrl = https://localhost:7282
+@JwtToken = token
+
+POST {{ApiBaseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "asdf@asdf.asdf",
+  "password": "asdf"
+}
+
+###
+GET {{ApiBaseUrl}}/api/auth/rottaProtetta
+Authorization: Bearer {{JwtToken}}
+
+###
+GET {{ApiBaseUrl}}/api/auth/free
