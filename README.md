@@ -84,3 +84,7 @@
 
     app.UseCors(); // registriamo il middlaware che gestisce il CORS
     ```
+
+## Frontend
+
+Nel frontend basta fare le richieste all'indirizzo della nostra API (qualcosa del tipo https://localhost:PORTA) tenendo in esecuzione il backend .NET durante i test.
